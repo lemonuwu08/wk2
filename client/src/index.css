@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  src: url("./assets/fonts/proxima-nova.otf") format("opentype");
+}
+
+* {
+  font-family: "Proxima Nova", sans-serif;
+  box-sizing: border-box;
+  @apply scroll-m-8 scroll-smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.installation img {
+  border-radius: 8px;
+}
+
+.installation ol {
+  @apply list-decimal list-inside;
+}
+
+.installation :is(li, p) {
+  @apply mt-8 mb-4;
+}
